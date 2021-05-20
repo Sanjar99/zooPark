@@ -1,0 +1,120 @@
+.testimonials__top{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 102px;
+}
+
+.testimonials__subject{
+  @include rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0D444D;
+}
+
+.testimonials__btn{
+  @include robotomono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #19707D;
+  background-color: transparent;
+  padding: 14px 20px 14px 60px;
+  border: 1.5px solid #19707D;
+  box-sizing: border-box;
+  border-radius: 100px;
+  position: relative;
+  &::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(./../img/icon-chat.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+  }
+}
+.testimonials__list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.testimonials__list-item{
+  width: 480px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 21px;
+    height: 11px;
+    background-image: url(./../../img/arrow-down.png) no-repeat;
+    background-size: contain;
+    
+  }
+}
+
+.testimonials__list-wrapper{
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.testimonials__list-date{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #B3B3B3;
+  padding-top: 28px;
+  margin-left: 45px;
+}
+
+.testimonials__list-blockquote{
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2D2D2D;
+  padding-bottom: 70px;
+  margin-bottom: 60px;
+}
+
+.testimonials__person{
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  padding-left: 105px;
+  position: relative;
+  &::before{
+    content: '';
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    background-image: url(./../img/chris.jpg);
+  }
+
+}
+.testimonials__person--adam::before{
+  background-image: url(./../img/adam.jpg);
+}
+.testimonials__person--amely::before{
+  background-image: url(./../img/amely.jpg);
+}

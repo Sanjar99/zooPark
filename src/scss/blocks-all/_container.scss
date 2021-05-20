@@ -1,0 +1,27 @@
+.container{
+  max-width: 1510px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+@media screen and (max-width:$desktop) {
+  .container{
+    max-width: 1169px;
+    padding: 0px 15px;
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width:$tablet) {
+  .container{
+    max-width: 630px;
+    padding: 0px 15px;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width:$phone) {
+  .container{
+    max-width: 350px;
+    padding: 0px 15px;
+    margin: 0px auto;
+  }
+}  

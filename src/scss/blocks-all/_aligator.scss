@@ -1,0 +1,238 @@
+.aligator{
+  background-image: url(./../../img/panda-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  // background-size: contain;
+  margin-bottom: -82px;
+}
+.aligator__container{
+  display: flex;
+  margin-top: 37px;
+}
+.aligator__side{
+  margin-right: 90px;
+  padding: 0px 15px;
+}
+
+
+
+
+.aligator__side-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.aligator__side-link{
+  position: relative;
+  display: block;
+  width: 76px;
+  height: 74px;
+}
+.aligator__side-link--active{
+  box-shadow: 0 0px 3px 8px #2A8086;
+  border-radius:46% 54% 67% 33% / 40% 40% 60% 60%;
+}
+.aligator__side-img{
+  border-radius:46% 54% 67% 33% / 40% 40% 60% 60% ;
+  background: #2A8086;
+}
+
+.aligator__side-animal{
+  @include robotomono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2D2D2D;
+}
+
+.aligator__wrapper{
+  width: 1325px;
+  position: relative;
+  margin: 0px auto;
+}
+.aligator__glosbe{
+  border: none;
+  position: absolute;
+  background: transparent;
+  width: 42px;
+  height: 42px;
+  right: 60px;
+  top: 30px;
+}
+.aligator__heart{
+  border: none;
+  position: absolute;
+  background: transparent;
+  width: 42px;
+  height: 42px;
+  right: 0px;
+  top: 30px;
+}
+.aligator__wrapper-subject{
+  @include rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0D444D;
+}
+
+.aligator__main-cameras-title{
+  @include rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #0D444D;
+}
+
+.aligator__side-cameras-title{
+  @include rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #0D444D;
+}
+
+.aligator__side-cameras-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    width: 52px;
+    height: 104px;
+    background-image: url(./../../img/icon-strelka.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+
+.aligator__side-cameras-item{
+  margin-right: 32px;
+  &:last-child{
+    margin-right: 0px;
+  }
+}
+
+.aligator__information{
+  display: flex;
+  justify-content: space-between;
+}
+.aligator__information-left{
+  width: 528px;
+}
+.aligator__information-right{
+  width: 600px;
+}
+.aligator__information-subject{
+  @include rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0D444D;
+}
+
+.aligator__information-list{
+  margin: 0;
+  padding: 0;
+}
+
+.aligator__information-item{
+  margin-bottom: 39px;
+  &:last-child{
+   margin-bottom: 0px; 
+  }
+}
+.aligator__information-title{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D444D;
+  margin-bottom: 8px;
+}
+
+.aligator__information-text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0D444D;
+  margin: 0px;
+}
+
+.aligator__information-text--border{
+  text-decoration-line: underline;
+
+}
+.aligator__Interesting-list{
+  padding: 0;
+  padding-left: 28px;
+  margin: 0;
+}
+
+.aligator__Interesting-item{
+  position: relative;
+  margin-bottom: 25px;
+  &:last-child{
+   margin-bottom: 0px; 
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    width: 12.36px;
+    height: 15.98px;
+    background: #0D444D;
+    transform: matrix(1, 0.02, 0.02, -1, 0, 0);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+  }
+}
+
+.aligator__Interesting-text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0D444D;
+}
+
+
+.aligator__btn{
+  display: block;
+  margin: 0px auto;
+  background-color: #C5E1E6;
+  border-radius: 100px;
+  @include robotomono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #0D444D;
+  padding: 14px 78px;
+  border: transparent;
+  box-shadow:(0px 2px 20px rgba(185, 213, 217, 0.6));
+  margin-top: 370px;
+  margin-bottom: 148px;
+}

@@ -1,0 +1,98 @@
+.contact-us{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgba(#000, .3);
+  display: none;
+  z-index: 5;
+}
+.contact-us--active{
+  display: flex;
+
+}
+
+
+.contact-us__wrapper {
+  width: 568px;
+  height: 712px;
+  background-color: #fff;
+  padding: 46px 60px 42px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.contact-us__off{
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color:transparent ;
+  right: 19px;
+  top: 20px;
+  position: absolute;
+  &:focus{
+    outline: none;
+  }
+}
+.contact-us__off::before,
+.contact-us__off::after{
+  content: '';
+  width: 29.69px;
+  height: 1.69px;
+  border: 1px solid #2C3E50;
+  display: block;
+  margin-bottom: 3.46px;
+  background-color: #2C3E50;
+}
+.contact-us__off::before{
+  position: relative;
+  top: 3px;
+  transform:rotate(-45deg);
+ 
+}
+.contact-us__off::after{
+  position: relative;
+  top: -3px;
+  transform:rotate(45deg);
+}
+
+.contact-us__subject{
+@include rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+color: #0D444D;
+}
+
+.contact-us__label{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #0D444D;
+  margin-bottom: 8px;
+}
+
+.contact-us__input{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  width: 448px;
+  height: 54px;
+  border:none;
+  margin-bottom: 20px;
+  outline: transparent;
+  padding-left:10px;
+}
+
+.contact-us__input--message{
+  height: 264px;
+  resize: none;
+  padding: 10px;
+}

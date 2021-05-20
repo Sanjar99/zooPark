@@ -1,0 +1,161 @@
+.animals{
+  margin-top: 83px;
+}
+.animals__top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.animals__subject{
+@include rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+color: #0D444D;
+}
+
+.animals__btn{
+@include robotomono;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #19707D;
+background-color:transparent ;
+padding: 14px 20px 14px 60px;
+border: 1.5px solid #19707D;
+box-sizing: border-box;
+border-radius: 100px;
+position: relative;
+  &::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 26px;
+  background-image: url(./../../img/icon-like.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center center;
+  width: 18px;
+  height: 16px;
+  }
+}
+.animals__btn-svg{
+  margin-right: 19px;
+}
+
+.animals__btn-logo{
+  fill: transparent;
+}
+
+.animals__list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: 78px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 52px;
+    height: 104px;
+    left: 1510px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./../../img/icon-strelka.svg);
+
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 65.69px;
+    left: 1520px;
+    top:  735px;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./../../img/Penguin.png);
+
+  }
+}
+.animals__item{
+  margin-right: 20px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  width: 480px;
+  margin-bottom: 20px;
+
+  &:nth-child(3n){
+    margin-right: 0px;
+  }
+}
+
+.animals__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &::before{
+    content: '';
+    width: 480px;
+    height: 0px;
+    top: 274px;
+    left: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    border: 1px solid #E5EAEB;
+
+  }
+}
+
+.animals__img{
+  padding-top: 20px;
+}
+
+.animals__wrapper{
+  margin: 17px auto 6px 30px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 380px;
+    width: 32px;
+    height: 32px;
+    transform: translateY(-50%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./../img/icon-tv.svg);
+  }
+}
+.animals__title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2D2D2D;
+  margin-top: 27px;
+  margin-bottom: 6px;
+}
+
+.animals__text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #919191;
+}
+
+
+
+ 

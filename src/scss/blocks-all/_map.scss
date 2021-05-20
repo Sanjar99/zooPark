@@ -1,0 +1,111 @@
+.map{
+  background-color: #2A8086;
+  padding-top: 108px;
+}
+.map__wrapper{
+  padding: 475px 0px;
+  background-image: url(./../../img/Map.png);
+  background-repeat: no-repeat;
+  background-size: 1920px contain;  
+  background-position: top center;
+  position: relative;
+}
+
+.map__title{
+  @include rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #C5E1E6;
+  margin-top: -550px;
+}
+
+.map__img{
+  border-radius:44% 56% 65% 35% / 45% 42% 58% 55%;
+}
+.map__link{
+  
+  position: absolute;
+  background-image: url(./../img/map-animals-bg.png);
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  border-radius:44% 56% 65% 35% / 45% 42% 58% 55%;
+  background: #C5E1E6;
+  box-shadow: 0 0px 3px 8px #c5e1e5;
+}
+
+.map__link--panda{
+  top: 400px;
+  right: 360px;
+  width: 73px;
+  height: 70.47px;
+}
+
+.map__link--eagle{
+  top: 375px;
+  left: 186px;
+  width: 73px;
+  height: 70.47px;
+}
+
+.map__link--gorilla{
+  left: 50%;
+  transform: translateX(-50%);
+  top: 535px;
+  width: 73px;
+  height: 70.47px;
+}
+
+.map__link--aligator{
+  top: 440px;
+  left: 340px;
+  width: 73px;
+  height: 70.47px;
+}
+
+
+.map__button{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1.5px solid #FFFFFF;
+  box-sizing: border-box;  
+  border-radius: 50%;
+
+}
+.map__button--plus{
+  bottom: 31px;
+  right: 40px;
+  &::before{
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(./../../img/icon-minus.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+    width: 22px;
+    height: 21px;
+  }
+}
+.map__button--minus{
+  bottom: 31px;
+  right: 0px;
+  &::before{
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(./../../img/icon-plus.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    width: 19px;
+    height: 19px;
+  }
+}

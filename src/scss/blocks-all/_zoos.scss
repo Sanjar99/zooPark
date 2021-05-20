@@ -1,0 +1,56 @@
+.zoos{
+  background-image: url(./../../img/zoos-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+}
+
+
+.zoos__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 580px;
+  margin-bottom: -87px;
+}
+  
+
+.zoos__subject{
+  @include sahitya;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 250px;
+  line-height: 330px;
+  text-transform: uppercase;
+  color: #0D444D;
+  margin: 0;
+  padding: 0;
+  margin-top: 55px;
+}
+
+.zoos__title{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D444D;
+  margin-top: -35px;
+}
+
+.zoos__link{
+  background: #19707D;
+  border-radius: 100px;
+  @include robotomono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #F3F7F8;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 15px;
+  padding: 14px 78px;
+}

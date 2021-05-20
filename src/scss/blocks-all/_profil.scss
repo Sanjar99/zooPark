@@ -1,0 +1,186 @@
+.profil{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgba(#000, .3);
+  display: none;
+  z-index: 5;
+  &.profil--active{
+    display: block;
+  }
+}
+
+
+.profil__wrapper{
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform:translateX(-50%) ;
+  width: 568px;
+  height: 774px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.profil__off{
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color:transparent ;
+  right: 19px;
+  top: 20px;
+  position: absolute;
+  &:focus{
+    outline: none;
+  }
+}
+.profil__off::before,
+.profil__off::after{
+  content: '';
+  width: 29.69px;
+  height: 1.69px;
+  border: 1px solid #2C3E50;
+  display: block;
+  margin-bottom: 3.46px;
+  background-color: #2C3E50;
+}
+.profil__off::before{
+  position: relative;
+  top: 3px;
+  transform:rotate(-45deg);
+ 
+}
+.profil__off::after{
+  position: relative;
+  top: -3px;
+  transform:rotate(45deg);
+}
+.profil__top{
+  background: #2A8086;
+  height: 125px;
+  border-radius:20px 20px 0px 0px ;
+}
+.profil__logo{
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform:translateX(-50%);
+}
+.profil__main{
+  padding: 32px 60px 46px;
+
+}
+.profil__account-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.profil__account-item{
+  width: 224px;
+}
+
+.profil__account-label{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #0D444D;
+  width: 164px;
+  padding: 0px 36px;
+  border-bottom:2px solid  #C5E1E6;
+}
+.profil__account-label--log{
+  padding: 0px 80px;
+}
+
+.profil__account-input:checked + .profil__account-label{
+  border-bottom:2px solid  #2A8086;
+}
+
+
+.profil__google-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.profil__google-item{
+  margin-right: 16px;
+  &:last-child{
+    margin-right: 0px;
+  }
+}
+
+.profil__google-link{
+  padding: 17px 54px 18px 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2D2D2D;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url(./../../img/icon-Google.svg);
+    
+  }
+  
+}
+.profil__google-link--fecebook::before{
+  background-image: url(./../../img/icon-Facebook.svg);
+}
+
+
+.profil__label{
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #0D444D;
+  margin-bottom: 10px;
+}
+
+
+.profil__input{
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  
+  height: 54px;
+  border:none;
+  margin-bottom: 20px;
+  outline: transparent;
+  padding-left:10px;
+}
+
+.profil__check-input{
+  margin-bottom: 33px;
+}
+.profil__check-label{
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2D2D2D;
+}
